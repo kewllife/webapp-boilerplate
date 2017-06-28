@@ -1,0 +1,24 @@
+{
+	"name"        : "web-app",
+	"version"     : "YY.MM.DD",
+	"description" : "Web app boilerplate",
+	"main"        : "index.js",
+	"repository": {
+	   "type" : "git",
+	   "url"  : "https://github.com/kewllife/webapp-boilerplate"
+    },
+	"keywords": [
+    	"webapp",
+    	"boilerplate"
+    ],
+	"dependencies": {
+        "async"     : "2.5.x",
+		"ejs"       : "2.5.x",
+		"express"   : "4.15.x",
+        "moment"    : "2.18.x",
+        "node-uuid" : "1.4.x",
+        "numeral"   : "2.0.x",
+        "winston"   : "2.3.x"
+	},
+	"license": "MIT"
+}
