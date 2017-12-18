@@ -34,9 +34,10 @@ var winston = require('winston')
  * Setup web and socket servers
  */
 
-var express = require('express'),
-    app     = express(),
-    http    = require('http').createServer(app)
+var express    = require('express'),
+    app        = express(),
+    http       = require('http').createServer(app),
+    bodyParser = require('body-parser')
 
 /*******************************************************************************
  * Setup logging
@@ -89,6 +90,12 @@ async.series([
         // app.use('/js', express.static(__dirname + '/public/js'))
         // app.use(express.static(__dirname + '/public'))
 
+        // parse application/x-www-form-urlencoded
+        // app.use(bodyParser.urlencoded({ extended: true }))
+
+        // parse application/json
+        // app.use(bodyParser.json())
+
         // set locale (on every request), if session locale exists
         // otherwise use default browser setting
         app.use(function (req, res, next) {
@@ -105,7 +112,7 @@ async.series([
   *  You must uncomment the following lines when ENABLING database functions.
   */
     // function initMainDbStep(callback) {
-    //     db.initMain(function () {
+    //     db.initDb('main', function () {
     //         // initialization is complete
     //         logger.info('Connected to Main Db')
 

@@ -1,6 +1,6 @@
 {
 	"name"        : "web-app",
-	"version"     : "YY.MM.DD",
+	"version"     : "17.01.01",
 	"description" : "Web app boilerplate",
 	"main"        : "index.js",
 	"repository": {
@@ -12,13 +12,14 @@
     	"boilerplate"
     ],
 	"dependencies": {
-        "async"     : "2.5.x",
-		"ejs"       : "2.5.x",
-		"express"   : "4.15.x",
-        "moment"    : "2.18.x",
-        "node-uuid" : "1.4.x",
-        "numeral"   : "2.0.x",
-        "winston"   : "2.3.x"
+        "async"       : "^2.5.x",
+        "body-parser" : "^1.18.x",
+		"ejs"         : "^2.5.x",
+		"express"     : "^4.15.x",
+        "moment"      : "^2.18.x",
+        "node-uuid"   : "^1.4.x",
+        "numeral"     : "^2.0.x",
+        "winston"     : "^2.3.x"
 	},
 	"license": "MIT"
 }
